@@ -303,7 +303,7 @@
      ***************************************************/
     function buildSimuladoQuestions() {
       const topics = [...new Set(allQuestions.map(q => q.theme))];
-      const totalQuestions = 60;  // Altere esse valor para 100 (ou outro número) se desejar
+      const totalQuestions = 10;  // Altere esse valor para 100 (ou outro número) se desejar
       simuladoQuestions = [];
       const baseCount = Math.floor(totalQuestions / topics.length);
       let remainder = totalQuestions % topics.length;
