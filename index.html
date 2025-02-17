@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corrente Parasita - N1</title>
+  <title>Quiz - CP N1</title>
   <style>
     /* Força o uso da fonte Arial em todos os elementos */
     * {
@@ -303,7 +303,7 @@
      ***************************************************/
     function buildSimuladoQuestions() {
       const topics = [...new Set(allQuestions.map(q => q.theme))];
-      const totalQuestions = 10;  // Altere esse valor para 100 (ou outro número) se desejar
+      const totalQuestions = 60;  // Altere esse valor para 100 (ou outro número) se desejar
       simuladoQuestions = [];
       const baseCount = Math.floor(totalQuestions / topics.length);
       let remainder = totalQuestions % topics.length;
@@ -401,27 +401,30 @@
         html += "</div>";
         container.innerHTML = html;
       } else if (mode === "simulado") {
-        const container = document.getElementById("questionContainer");
-        const feedbackDiv = document.getElementById("feedback");
-        feedbackDiv.textContent = "";
-        if (simuladoQuestions.length === 0) {
-          finishSimulado();
-          return;
-        }
-        currentQuestion = simuladoQuestions[0];
-        selectedOptionIndex = null;
-        let html = "<div class='question'><strong>" + currentQuestion.question + "</strong></div>";
-        html += "<ul class='options'>";
-        currentQuestion.options.forEach((option, index) => {
-          html += "<li><button type='button' class='option-button' onclick='selectOption(" + index + ")'>" + option + "</button></li>";
-        });
-        html += "</ul>";
-        html += "<div class='btn-group'>";
-        html += "<button type='button' class='action-button responder' onclick='submitAnswer()'>Responder</button>";
-        html += "<button type='button' class='action-button pular' onclick='skipQuestion()'>Pular</button>";
-        html += "</div>";
-        container.innerHTML = html;
-      }
+  const container = document.getElementById("questionContainer");
+  const feedbackDiv = document.getElementById("feedback");
+  feedbackDiv.textContent = "";
+  if (simuladoQuestions.length === 0) {
+    finishSimulado();
+    return;
+  }
+  currentQuestion = simuladoQuestions[0];
+  selectedOptionIndex = null;
+  let html = "<div class='question'>";
+  html += "<p class='theme'>Tópico: " + currentQuestion.theme + "</p>";
+  html += "<strong>" + currentQuestion.question + "</strong>";
+  html += "</div>";
+  html += "<ul class='options'>";
+  currentQuestion.options.forEach((option, index) => {
+    html += "<li><button type='button' class='option-button' onclick='selectOption(" + index + ")'>" + option + "</button></li>";
+  });
+  html += "</ul>";
+  html += "<div class='btn-group'>";
+  html += "<button type='button' class='action-button responder' onclick='submitAnswer()'>Responder</button>";
+  html += "<button type='button' class='action-button pular' onclick='skipQuestion()'>Pular</button>";
+  html += "</div>";
+  container.innerHTML = html;
+}
     }
     
     /***************************************************
