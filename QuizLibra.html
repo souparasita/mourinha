@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ</title>
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      font-size: 16px;
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #landingPage, #optionsPage {
+      text-align: center;
+      margin-top: 50px;
+    }
+    #landingPage h1 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .course-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .course-button {
+      width: 250px;
+      padding: 15px;
+      font-size: 1.1em;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .course-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.02);
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      width: 250px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      text-align: left;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+      line-height: 1.4em;
+    }
+    .open-menu-btn, .option-button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .open-menu-btn:hover, .option-button:hover {
+      background-color: #0056b3;
+    }
+    #questionContainer {
+      margin-top: 20px;
+    }
+    #themeOverlay, #keyboardOverlay, #hamburgerMenu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      z-index: 1000;
+    }
+    .overlay-content {
+      background: #fff;
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+    }
+    .overlay-content h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    .overlay-content label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .overlay-content input[type="checkbox"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .overlay-content button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+    }
+    #progressWrapper {
+      display: none;
+    }
+    .progress-container {
+      width: 100%;
+      max-width: 500px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      position: relative;
+      margin: 20px auto;
+    }
+    .progress-bar {
+      width: 0%;
+      height: 30px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      border-radius: 5px;
+      transition: width 0.3s ease;
+    }
+    #remainingQuestions {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    .option-button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .option-button:hover {
+      background-color: #0056b3;
+    }
+    .option-button.selected {
+      background-color: #0056b3;
+    }
+    .btn-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .action-button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .responder {
+      background-color: #28a745;
+      color: #fff;
+    }
+    .responder:hover {
+      background-color: #218838;
+    }
+    .pular {
+      background-color: #dc3545;
+      color: #fff;
+    }
+    .pular:hover {
+      background-color: #c82333;
+    }
+    .feedback {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    #resultContainer {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .result-question {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      text-align: left;
+    }
+    .theme {
+      font-size: 0.8em;
+      color: #777;
+      margin-bottom: 5px;
+    }
+    #hamburgerBtn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    #hamburgerMenuContent {
+      background: #fff;
+      width: 200px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+    }
+    #hamburgerMenuContent button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #keyboardContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .keyboard-btn {
+      padding: 20px;
+      font-size: 1.2em;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .keyboard-btn:hover {
+      background-color: #e0e0e0;
+    }
+    #quantityInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="hamburgerBtn" onclick="toggleHamburgerMenu()">≡</button>
+    <div id="landingPage">
+      <h1>Selecione o Curso</h1>
+      <div id="courseSelection" class="course-container">
+        <!-- Botões dos cursos serão inseridos aqui -->
+      </div>
+    </div>
+    <div id="optionsPage" style="display:none;">
+      <div class="card-container">
+        <div class="card" onclick="startExercicios()">
+          <h2>Exercícios</h2>
+          <p>Estude no seu ritmo, através de exercícios com foco em tópicos específicos.</p>
+        </div>
+        <div class="card" onclick="checkSimuladoState()">
+          <h2>Simulado</h2>
+          <p>Teste seus conhecimentos em condições similares ao exame real.</p>
+        </div>
+      </div>
+    </div>
+    <div id="quizContainer" style="display:none;">
+      <button id="openMenuBtn" class="open-menu-btn" onclick="showOverlay()">Selecionar Tópicos</button>
+      <div id="progressWrapper" style="display:none;">
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <span id="remainingQuestions"></span>
+          </div>
+        </div>
+      </div>
+      <div id="questionContainer"></div>
+      <div id="feedback" class="feedback"></div>
+    </div>
+    <div id="resultContainer" style="display:none;"></div>
+  </div>
+  <div id="themeOverlay">
+    <div class="overlay-content">
+      <h2>Selecione os Tópicos</h2>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="Processo de Fabricação de Materiais">
+        Processo de Fabricação de Materiais
+      </label>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="Tipos de Ensaios Não Destrutivos">
+        Tipos de Ensaios Não Destrutivos
+      </label>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="História">
+        História
+      </label>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="Generalidades do Ensaio">
+        Generalidades do Ensaio
+      </label>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="Princípios e Teoria do Ensaio">
+        Princípios e Teoria do Ensaio
+      </label>
+      <label>
+        <input type="checkbox" class="theme-checkbox" value="Fatores que Afetam o Ensaio">
+        Fatores que Afetam o Ensaio
+      </label>
+      <button onclick="applyThemesAndClose()">Aplicar Tópicos</button>
+    </div>
+  </div>
+  <div id="keyboardOverlay" style="display:none;">
+    <div class="overlay-content">
+      <h2>Quantas questões você deseja no simulado?</h2>
+      <input type="text" id="quantityInput" readonly>
+      <div id="keyboardContainer"></div>
+      <button onclick="confirmQuantity()">Confirmar</button>
+    </div>
+  </div>
+  <div id="hamburgerMenu" style="display:none;">
+    <div id="hamburgerMenuContent">
+      <button onclick="goToHome()">Página inicial</button>
+      <button onclick="resetHistory()">Resetar Histórico</button>
+    </div>
+  </div>
+  <script>
+    let mode = "";
+    let allQuestions = [];
+    let pendingQuestions = [];
+    let currentQuestion = null;
+    let selectedOptionIndex = null;
+    let simuladoQuestions = [];
+    let simuladoResults = [];
+    let simuladoStartTime = null;
+    let selectedCourse = null;
+    let totalSimuladoQuestions = 0;
+    let respondedQuestions = 0;
+    let selectedThemes = [];
+
+    const courses = [
+      { name: "Correntes Parasitas Nível 1", questionsFile: "questionsCPN1.json" },
+    ];
+
+    function displayCourses() {
+      const courseSelectionDiv = document.getElementById("courseSelection");
+      courseSelectionDiv.innerHTML = "";
+      courses.forEach((course, index) => {
+        const button = document.createElement("button");
+        button.textContent = course.name;
+        button.classList.add("course-button");
+        button.onclick = () => selectCourse(index);
+        courseSelectionDiv.appendChild(button);
+      });
+    }
+
+    function selectCourse(courseIndex) {
+      selectedCourse = courses[courseIndex];
+      loadQuestions(selectedCourse.questionsFile);
+      showOptions();
+    }
+
+    function showOptions() {
+      document.getElementById("landingPage").style.display = "none";
+      document.getElementById("optionsPage").style.display = "block";
+    }
+
+    function loadQuestions(filePath) {
+      fetch(filePath)
+        .then(response => response.json())
+        .then(data => {
+          allQuestions = data;
+          pendingQuestions = [...allQuestions];
+          restoreState();
+        })
+        .catch(error => {
+          console.error('Erro ao carregar as questões:', error);
+        });
+    }
+
+    function startExercicios() {
+      mode = "exercicios";
+      document.getElementById("optionsPage").style.display = "none";
+      document.getElementById("quizContainer").style.display = "block";
+      document.getElementById("openMenuBtn").style.display = "block";
+      updateCounters();
+      loadNextQuestion();
+    }
+
+    function checkSimuladoState() {
+      const savedSimuladoQuestions = localStorage.getItem("simuladoQuestions");
+      if (savedSimuladoQuestions && JSON.parse(savedSimuladoQuestions).length > 0) {
+        restoreSimulado();
+      } else {
+        openQuantitySelector();
+      }
+    }
+
+    function restoreSimulado() {
+      mode = "simulado";
+      document.getElementById("optionsPage").style.display = "none";
+      document.getElementById("quizContainer").style.display = "block";
+      document.getElementById("openMenuBtn").style.display = "none";
+      updateCounters();
+      loadNextQuestion();
+    }
+
+    function openQuantitySelector() {
+      document.getElementById("keyboardOverlay").style.display = "block";
+      createKeyboard();
+    }
+
+    function createKeyboard() {
+      const keyboardContainer = document.getElementById("keyboardContainer");
+      keyboardContainer.innerHTML = "";
+      const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+      numbers.forEach(num => {
+        const btn = document.createElement("button");
+        btn.textContent = num;
+        btn.classList.add("keyboard-btn");
+        btn.onclick = () => appendToInput(num);
+        keyboardContainer.appendChild(btn);
+      });
+      const apagarBtn = document.createElement("button");
+      apagarBtn.textContent = "Apagar";
+      apagarBtn.classList.add("keyboard-btn");
+      apagarBtn.onclick = () => deleteLastDigit();
+      keyboardContainer.appendChild(apagarBtn);
+    }
+
+    function appendToInput(num) {
+      const input = document.getElementById("quantityInput");
+      input.value += num;
+    }
+
+    function deleteLastDigit() {
+      const input = document.getElementById("quantityInput");
+      input.value = input.value.slice(0, -1);
+    }
+
+    function confirmQuantity() {
+      const input = document.getElementById("quantityInput");
+      let quantity = parseInt(input.value) || 0;
+      const totalAvailable = allQuestions.length;
+      if (quantity > totalAvailable) {
+        quantity = totalAvailable;
+      }
+      totalSimuladoQuestions = quantity;
+      document.getElementById("keyboardOverlay").style.display = "none";
+      alert(`Você escolheu ${quantity} questões para o simulado.`);
+      startSimulado(quantity);
+    }
+
+    function startSimulado(quantity) {
+      mode = "simulado";
+      document.getElementById("optionsPage").style.display = "none";
+      document.getElementById("quizContainer").style.display = "block";
+      document.getElementById("openMenuBtn").style.display = "none";
+      buildSimuladoQuestions(quantity);
+      simuladoResults = [];
+      simuladoStartTime = Date.now();
+      respondedQuestions = 0;
+      updateCounters();
+      loadNextQuestion();
+    }
+
+    function buildSimuladoQuestions(quantity) {
+      simuladoQuestions = [];
+      const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+      simuladoQuestions = shuffled.slice(0, quantity);
+    }
+
+    function updateCounters() {
+      const progressWrapper = document.getElementById('progressWrapper');
+      const remainingQuestionsSpan = document.getElementById('remainingQuestions');
+
+      if (mode === "exercicios") {
+        const selectedThemes = getSelectedThemes();
+        if (selectedThemes.length === 0) {
+          progressWrapper.style.display = 'none';
+          return;
+        }
+        const totalQuestions = allQuestions.filter(q => selectedThemes.includes(q.theme)).length;
+        const pendingForThemes = pendingQuestions.filter(q => selectedThemes.includes(q.theme)).length;
+        const correctAnswers = totalQuestions - pendingForThemes;
+        const progress = totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
+        document.getElementById('progressBar').style.width = progress + '%';
+        remainingQuestionsSpan.textContent = pendingForThemes;
+        progressWrapper.style.display = 'block';
+      } else if (mode === "simulado") {
+        const progress = totalSimuladoQuestions > 0 ? (respondedQuestions / totalSimuladoQuestions) * 100 : 0;
+        document.getElementById('progressBar').style.width = progress + '%';
+        remainingQuestionsSpan.textContent = '';
+        progressWrapper.style.display = 'block';
+      }
+    }
+
+    function loadNextQuestion() {
+      if (mode === "exercicios") {
+        const selectedThemes = getSelectedThemes();
+        const container = document.getElementById("questionContainer");
+        const feedbackDiv = document.getElementById("feedback");
+        feedbackDiv.textContent = "";
+        const openMenuBtn = document.getElementById("openMenuBtn");
+        openMenuBtn.style.display = "block"; // Garantir que o botão esteja visível
+
+        if (selectedThemes.length === 0) {
+          container.innerHTML = "<p style='text-align:center;'>Por favor, selecione ao menos um tópico.</p>";
+          document.getElementById('progressWrapper').style.display = 'none';
+          return;
+        }
+
+        const filtered = pendingQuestions.filter(q => selectedThemes.includes(q.theme));
+
+        if (filtered.length === 0) {
+          container.innerHTML = "<p style='text-align:center;'>Parabéns! Você concluiu todas as questões dos tópicos selecionados.</p>";
+          document.getElementById('progressWrapper').style.display = 'none';
+          return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * filtered.length);
+        currentQuestion = filtered[randomIndex];
+        selectedOptionIndex = null;
+
+        let html = "<div class='question'>";
+        html += "<p class='theme'>Tópico: " + currentQuestion.theme + "</p>";
+        html += "<strong>" + currentQuestion.question + "</strong>";
+        html += "</div>";
+        html += "<ul class='options'>";
+        currentQuestion.options.forEach((option, index) => {
+          html += "<li><button type='button' class='option-button' onclick='selectOption(" + index + ")'>" + option + "</button></li>";
+        });
+        html += "</ul>";
+        html += "<div class='btn-group'>";
+        html += "<button type='button' class='action-button responder' onclick='submitAnswer()'>Responder</button>";
+        html += "<button type='button' class='action-button pular' onclick='skipQuestion()'>Pular</button>";
+        html += "</div>";
+
+        container.innerHTML = html;
+      } else if (mode === "simulado") {
+        const container = document.getElementById("questionContainer");
+        const feedbackDiv = document.getElementById("feedback");
+        feedbackDiv.textContent = "";
+
+        if (simuladoQuestions.length === 0) {
+          finishSimulado();
+          return;
+        }
+
+        currentQuestion = simuladoQuestions[0];
+        selectedOptionIndex = null;
+
+        let html = "<div class='question'>";
+        html += "<p class='theme'>Tópico: " + currentQuestion.theme + "</p>";
+        html += "<strong>" + currentQuestion.question + "</strong>";
+        html += "</div>";
+        html += "<ul class='options'>";
+        currentQuestion.options.forEach((option, index) => {
+          html += "<li><button type='button' class='option-button' onclick='selectOption(" + index + ")'>" + option + "</button></li>";
+        });
+        html += "</ul>";
+        html += "<div class='btn-group'>";
+        html += "<button type='button' class='action-button responder' onclick='submitAnswer()'>Responder</button>";
+        html += "<button type='button' class='action-button pular' onclick='skipQuestion()'>Pular</button>";
+        html += "</div>";
+
+        container.innerHTML = html;
+      }
+    }
+
+    function selectOption(index) {
+      selectedOptionIndex = index;
+      const buttons = document.querySelectorAll('#questionContainer .option-button');
+      buttons.forEach((btn, idx) => {
+        if (idx === index) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
+      });
+    }
+
+    function submitAnswer() {
+      if (selectedOptionIndex === null) {
+        alert("Por favor, selecione uma opção antes de responder.");
+        return;
+      }
+
+      if (mode === "exercicios") {
+        const feedbackDiv = document.getElementById("feedback");
+        const qIndex = pendingQuestions.findIndex(q => q.id === currentQuestion.id);
+        if (qIndex === -1) return;
+
+        if (selectedOptionIndex === currentQuestion.answer) {
+          feedbackDiv.style.color = "green";
+          feedbackDiv.textContent = "Acertou!";
+          pendingQuestions.splice(qIndex, 1);
+        } else {
+          feedbackDiv.style.color = "red";
+          feedbackDiv.textContent = "Errou!";
+          pendingQuestions.splice(qIndex, 1);
+          pendingQuestions.push(currentQuestion);
+        }
+
+        updateCounters();
+        saveState();
+        setTimeout(loadNextQuestion, 1000);
+
+      } else if (mode === "simulado") {
+        simuladoResults.push({
+          id: currentQuestion.id,
+          question: currentQuestion.question,
+          options: currentQuestion.options,
+          chosen: selectedOptionIndex,
+          correct: currentQuestion.answer,
+          theme: currentQuestion.theme
+        });
+        simuladoQuestions.shift();
+        respondedQuestions++;
+        updateCounters();
+        saveState();
+        loadNextQuestion();
+      }
+    }
+
+    function skipQuestion() {
+      if (mode === "exercicios") {
+        const feedbackDiv = document.getElementById("feedback");
+        const qIndex = pendingQuestions.findIndex(q => q.id === currentQuestion.id);
+        if (qIndex === -1) return;
+
+        pendingQuestions.splice(qIndex, 1);
+        pendingQuestions.push(currentQuestion);
+
+        feedbackDiv.style.color = "blue";
+        feedbackDiv.textContent = "Questão pulada!";
+        updateCounters();
+        saveState();
+        setTimeout(loadNextQuestion, 1000);
+
+      } else if (mode === "simulado") {
+        simuladoQuestions.push(simuladoQuestions.shift());
+        loadNextQuestion();
+      }
+    }
+
+    function finishSimulado() {
+      document.getElementById("quizContainer").style.display = "none";
+      const resultContainer = document.getElementById("resultContainer");
+      resultContainer.style.display = "block";
+
+      let endTime = Date.now();
+      let timeTaken = Math.floor((endTime - simuladoStartTime) / 1000);
+      let correctCount = simuladoResults.filter(r => r.chosen === r.correct).length;
+      let total = totalSimuladoQuestions;
+      let percentage = total > 0 ? ((correctCount / total) * 100).toFixed(0) : 0;
+
+      let resultHtml = "<h2>Resultado do Simulado</h2>";
+      resultHtml += "<p>Pontuação: " + correctCount + " de " + total + " (" + percentage + "%)</p>";
+      resultHtml += "<p>Tempo: " + timeTaken + " segundos</p>";
+
+      let incorrectResults = simuladoResults.filter(r => r.chosen !== r.correct);
+      if (incorrectResults.length > 0) {
+        resultHtml += "<h3>Questões incorretas:</h3>";
+        incorrectResults.forEach(r => {
+          resultHtml += "<div class='result-question'>";
+          resultHtml += "<p><strong>" + r.question + "</strong></p>";
+          resultHtml += "<p>Sua resposta: " + (r.chosen !== null && r.chosen < r.options.length ? r.options[r.chosen] : "Nenhuma resposta") + "</p>";
+          resultHtml += "<p>Resposta correta: " + r.options[r.correct] + "</p>";
+          resultHtml += "</div>";
+        });
+      } else {
+        resultHtml += "<p>Parabéns! Todas as respostas estão corretas.</p>";
+      }
+
+      resultContainer.innerHTML = resultHtml;
+
+      // Limpar dados do simulado no localStorage
+      localStorage.removeItem("simuladoQuestions");
+      localStorage.removeItem("simuladoResults");
+      localStorage.removeItem("simuladoStartTime");
+      localStorage.removeItem("totalSimuladoQuestions");
+      localStorage.removeItem("respondedQuestions");
+    }
+
+    function toggleHamburgerMenu() {
+      const menu = document.getElementById("hamburgerMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    function goToHome() {
+      document.getElementById("hamburgerMenu").style.display = "none";
+      document.getElementById("quizContainer").style.display = "none";
+      document.getElementById("resultContainer").style.display = "none";
+      document.getElementById("landingPage").style.display = "none";
+      document.getElementById("optionsPage").style.display = "block";
+    }
+
+    function resetHistory() {
+      if (confirm("Tem certeza que deseja resetar todo o histórico? Isso não pode ser desfeito.")) {
+        localStorage.clear();
+        pendingQuestions = [...allQuestions];
+        selectedThemes = [];
+        simuladoQuestions = [];
+        simuladoResults = [];
+        totalSimuladoQuestions = 0;
+        respondedQuestions = 0;
+        document.querySelectorAll('.theme-checkbox').forEach(cb => cb.checked = false);
+        goToHome();
+      }
+    }
+
+    function showOverlay() {
+      document.getElementById("themeOverlay").style.display = "block";
+    }
+
+    function applyThemesAndClose() {
+      selectedThemes = getSelectedThemes();
+      pendingQuestions = allQuestions.filter(q => selectedThemes.includes(q.theme));
+      updateCounters();
+      loadNextQuestion();
+      document.getElementById("themeOverlay").style.display = "none";
+    }
+
+    function getSelectedThemes() {
+      const checkboxes = document.querySelectorAll('.theme-checkbox');
+      let selected = [];
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          selected.push(cb.value);
+        }
+      });
+      return selected;
+    }
+
+    function saveState() {
+      if (mode === "exercicios") {
+        localStorage.setItem("pendingQuestions", JSON.stringify(pendingQuestions));
+        localStorage.setItem("selectedThemes", JSON.stringify(selectedThemes));
+      } else if (mode === "simulado") {
+        localStorage.setItem("simuladoResults", JSON.stringify(simuladoResults));
+        localStorage.setItem("simuladoQuestions", JSON.stringify(simuladoQuestions));
+        localStorage.setItem("simuladoStartTime", simuladoStartTime);
+        localStorage.setItem("totalSimuladoQuestions", totalSimuladoQuestions);
+        localStorage.setItem("respondedQuestions", respondedQuestions);
+      }
+    }
+
+    function restoreState() {
+      const savedPending = localStorage.getItem("pendingQuestions");
+      if (savedPending) {
+        pendingQuestions = JSON.parse(savedPending);
+      }
+      const savedThemes = localStorage.getItem("selectedThemes");
+      if (savedThemes) {
+        selectedThemes = JSON.parse(savedThemes);
+        document.querySelectorAll('.theme-checkbox').forEach(cb => {
+          cb.checked = selectedThemes.includes(cb.value);
+        });
+      }
+      const savedSimuladoQuestions = localStorage.getItem("simuladoQuestions");
+      if (savedSimuladoQuestions) {
+        simuladoQuestions = JSON.parse(savedSimuladoQuestions);
+      }
+      const savedSimuladoResults = localStorage.getItem("simuladoResults");
+      if (savedSimuladoResults) {
+        simuladoResults = JSON.parse(savedSimuladoResults);
+      }
+      const savedStartTime = localStorage.getItem("simuladoStartTime");
+      if (savedStartTime) {
+        simuladoStartTime = parseInt(savedStartTime);
+      }
+      const savedTotalQuestions = localStorage.getItem("totalSimuladoQuestions");
+      if (savedTotalQuestions) {
+        totalSimuladoQuestions = parseInt(savedTotalQuestions);
+      }
+      const savedResponded = localStorage.getItem("respondedQuestions");
+      if (savedResponded) {
+        respondedQuestions = parseInt(savedResponded);
+      }
+    }
+
+    window.onload = function() {
+      displayCourses();
+    };
+  </script>
+</body>
+</html>
