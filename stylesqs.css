@@ -103,11 +103,13 @@ h1 {
 .overlay-content {
   background: #fff;
   width: 300px;
-  margin: 100px auto;
+  max-height: 80vh; /* Limita a altura máxima a 80% da viewport */
+  margin: 20px auto; /* Reduz a margem superior de 100px para 20px */
   padding: 20px;
   border-radius: 8px;
   text-align: left;
   position: relative;
+  overflow-y: auto; /* Habilita rolagem vertical quando o conteúdo ultrapassa a altura máxima */
 }
 
 .overlay-content h2 {
