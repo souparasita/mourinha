@@ -342,7 +342,6 @@
     "options": ["Não pode ser automatizado.", "Fornece resultados apenas qualitativos em muitas aplicações.", "Exige contato direto com a peça.", "Não detecta trincas de fadiga."],
     "answer": 1
   },
-// 50 retirada
   {
     "id": 51,
     "theme": "Generalidades do Ensaio",
@@ -441,7 +440,6 @@
     "options": ["Diretamente proporcional.", "Inversamente proporcional.", "Não há relação entre elas.", "Ambas dependem da voltagem."],
     "answer": 1
   },
-// 65 retirado
   {
     "id": 66,
     "theme": "Princípios e Teoria do Ensaio",
