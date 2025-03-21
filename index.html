@@ -678,6 +678,7 @@
       if (mode === "exercicios") {
         localStorage.setItem(`selectedThemes_exercicios_${COURSE_KEY}`, JSON.stringify(selected));
         selectedThemes = selected;
+        localStorage.removeItem(`pendingQuestions_${COURSE_KEY}`); // Resetar o progresso salvo
         pendingQuestions = allQuestions.filter(q => selected.includes(q.theme));
         updateCounters();
         loadNextQuestion();
