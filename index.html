@@ -39,6 +39,7 @@
   </div>
   <div id="themeOverlay">
     <div class="overlay-content">
+      <button id="closeThemeOverlayBtn">X</button>
       <h2>Selecione os Tópicos</h2>
       <label>
         <input type="checkbox" class="theme-checkbox" value="Tipos de Ensaios Não Destrutivos">
@@ -924,7 +925,10 @@
       });
       resultsDiv.innerHTML = html;
     }
-
+    // funcão de fechar div de Selecionar tópicos
+    document.getElementById('closeThemeOverlayBtn').addEventListener('click', function() {
+    document.getElementById('themeOverlay').style.display = 'none';
+});
     function redirectWhatsApp() {
       window.location.href = "https://api.whatsapp.com/send?phone=5592993927441";
     }
