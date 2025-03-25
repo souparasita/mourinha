@@ -1,0 +1,597 @@
+/* ================================
+   ESTILOS GLOBAIS
+================================ */
+/* Estilos aplicados a todos os elementos da página para consistência */
+* {
+  font-family: Arial, sans-serif; /* Define Arial como fonte padrão para todo o texto no site */
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove paddings padrão de todos os elementos */
+  box-sizing: border-box; /* Faz com que padding e borda sejam incluídos no cálculo de largura e altura */
+}
+
+/* Container principal que envolve todo o conteúdo da página */
+.container {
+  font-size: 16px; /* Define o tamanho base da fonte dentro do container */
+  max-width: 800px; /* Limita a largura máxima do conteúdo para melhor legibilidade */
+  margin: 50px auto; /* Centraliza horizontalmente com margens de 50px no topo e base */
+  background: #fff; /* Define fundo branco para destacar o conteúdo */
+  padding: 20px 30px; /* Adiciona espaçamento interno de 20px vertical e 30px horizontal */
+  border-radius: 8px; /* Arredonda os cantos do container */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra suave para profundidade */
+  position: relative; /* Permite posicionar elementos filhos (como botões) de forma absoluta dentro dele */
+}
+
+/* Estilo para títulos principais <h1> em toda a página */
+h1 {
+  text-align: center; /* Centraliza o texto dos títulos */
+  color: #333; /* Define a cor do texto como cinza escuro para contraste suave */
+}
+
+/* ================================
+   ESTILOS DA PÁGINA INICIAL (LANDING PAGE)
+================================ */
+/* Container da página inicial que exibe o título e os cards de opções */
+#landingPage {
+  text-align: center; /* Centraliza o conteúdo da página inicial */
+  margin-top: 50px; /* Adiciona espaço acima para separar do topo da página */
+}
+
+/* Título específico da página inicial dentro de #landingPage */
+#landingPage h1 {
+  font-size: 1.8em; /* Aumenta o tamanho do título para destaque */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título para separar dos cards */
+}
+
+/* Container que organiza os cards de "Exercícios" e "Simulado" */
+.card-container {
+  display: flex; /* Usa flexbox para organizar os cards em linha */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 20px; /* Define espaçamento de 20px entre os cards */
+  margin-top: 20px; /* Adiciona espaço acima dos cards */
+}
+
+/* Estilo de cada card individual (Exercícios e Simulado) */
+.card {
+  width: 250px; /* Define largura fixa para cada card */
+  background-color: #f9f9f9; /* Fundo cinza claro para diferenciar do container principal */
+  border-radius: 8px; /* Arredonda os cantos do card */
+  padding: 20px; /* Adiciona espaçamento interno */
+  cursor: pointer; /* Muda o cursor para indicar que o card é clicável */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Adiciona sombra leve para profundidade */
+  transition: transform 0.2s; /* Adiciona transição suave ao efeito de hover */
+  text-align: left; /* Alinha o texto dentro do card à esquerda */
+}
+
+/* Efeito ao passar o mouse sobre os cards */
+.card:hover {
+  transform: scale(1.02); /* Aumenta ligeiramente o tamanho do card para destacar */
+}
+
+/* Títulos <h2> dentro dos cards */
+.card h2 {
+  margin-top: 0; /* Remove margem superior para alinhar com o topo do card */
+  font-size: 1.2em; /* Define tamanho da fonte do título do card */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+  color: #333; /* Define cor cinza escuro para o título */
+}
+
+/* Parágrafos <p> dentro dos cards */
+.card p {
+  font-size: 0.95em; /* Define tamanho ligeiramente menor para o texto descritivo */
+  color: #555; /* Usa cinza médio para contraste suave */
+  line-height: 1.4em; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+/* ================================
+   ESTILOS DOS BOTÕES
+================================ */
+/* Botões genéricos como o de abrir o menu de temas e opções de resposta */
+.open-menu-btn, .option-button {
+  display: block; /* Exibe como bloco para ocupar a largura disponível */
+  margin: 10px auto; /* Centraliza horizontalmente com margem vertical de 10px */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  font-size: 1em; /* Define tamanho padrão da fonte */
+  background-color: #007BFF; /* Cor de fundo azul padrão */
+  color: #fff; /* Texto branco para contraste */
+  border: none; /* Remove bordas padrão */
+  border-radius: 4px; /* Arredonda os cantos */
+  cursor: pointer; /* Indica que é clicável */
+  transition: background-color 0.3s; /* Transição suave na cor de fundo */
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+/* Efeito ao passar o mouse nos botões .open-menu-btn e .option-button */
+.open-menu-btn:hover, .option-button:hover {
+  background-color: #0056b3; /* Escurece o azul ao passar o mouse */
+}
+
+/* Botão de favoritar/desfavoritar questões no quiz */
+#favoriteBtn {
+  display: block; /* Exibe como bloco */
+  margin: 10px auto; /* Centraliza com margem vertical */
+  padding: 5px 10px; /* Padding menor que outros botões */
+  font-size: 0.9em; /* Fonte ligeiramente menor */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Indica interatividade */
+  transition: background-color 0.3s; /* Transição na cor de fundo (definida via JavaScript) */
+}
+
+/* Container para agrupar botões de ação como "Responder" e "Pular" */
+.btn-group {
+  text-align: center; /* Centraliza os botões dentro do grupo */
+  margin-top: 20px; /* Adiciona espaço acima do grupo */
+}
+
+/* Estilo base para botões de ação (Responder e Pular) */
+.action-button {
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 1em; /* Tamanho padrão da fonte */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  margin: 0 10px; /* Espaçamento horizontal entre botões */
+  cursor: pointer; /* Indica que é clicável */
+  transition: background-color 0.3s; /* Transição suave na cor */
+}
+
+/* Botão "Responder" no quiz */
+.responder {
+  background-color: #28a745; /* Fundo verde para indicar ação positiva */
+  color: #fff; /* Texto branco */
+}
+
+/* Efeito hover no botão "Responder" */
+.responder:hover {
+  background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Botão "Pular" no quiz */
+.pular {
+  background-color: #dc3545; /* Fundo vermelho para indicar ação alternativa */
+  color: #fff; /* Texto branco */
+}
+
+/* Efeito hover no botão "Pular" */
+.pular:hover {
+  background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* ================================
+   ESTILOS DO CONTAINER DE QUESTÕES
+================================ */
+/* Container que exibe a questão atual e suas opções no quiz */
+#questionContainer {
+  margin-top: 20px; /* Adiciona espaço acima para separar da barra de progresso ou título */
+}
+
+/* Texto da questão exibido no #questionContainer */
+.question {
+  font-size: 1.2em; /* Aumenta o tamanho da fonte para destacar a questão */
+  margin-bottom: 20px; /* Adiciona espaço abaixo para separar das opções */
+}
+
+/* Lista de opções de resposta no #questionContainer */
+.options {
+  list-style-type: none; /* Remove marcadores padrão da lista */
+  padding: 0; /* Remove padding padrão */
+}
+
+/* Cada item <li> da lista de opções */
+.options li {
+  margin-bottom: 10px; /* Adiciona espaço entre as opções */
+}
+
+/* Botões de escolha das opções de resposta */
+.option-button {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1em; /* Tamanho padrão da fonte */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  background-color: #007BFF; /* Fundo azul padrão */
+  color: #fff; /* Texto branco */
+  cursor: pointer; /* Indica que é clicável */
+  transition: background-color 0.3s; /* Transição suave na cor */
+}
+
+/* Efeito hover nos botões de opções */
+.option-button:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo para a opção selecionada pelo usuário */
+.option-button.selected {
+  background-color: #0056b3; /* Azul escuro para indicar seleção */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+  transition: transform 0.2s ease, background-color 0.3s; /* Transições suaves */
+}
+
+/* Estilo para opção correta após resposta */
+.option-button.correct {
+  background-color: #28a745; /* Verde para indicar resposta correta */
+}
+
+/* Estilo para opção incorreta após resposta */
+.option-button.incorrect {
+  animation: blinkRed 0.5s ease 2; /* Aplica animação de piscar em vermelho duas vezes */
+}
+
+/* Animação para opções incorretas */
+@keyframes blinkRed {
+  0% { background-color: #dc3545; } /* Começa vermelho */
+  50% { background-color: #0056b3; } /* Volta ao azul */
+  100% { background-color: #dc3545; } /* Termina vermelho */
+}
+
+/* ================================
+   ESTILOS DA BARRA DE PROGRESSO
+================================ */
+/* Container da barra de progresso e contador de questões */
+#progressWrapper {
+  display: none; /* Oculta inicialmente até o início do quiz ou simulado */
+}
+
+/* Container da barra de progresso dentro de #progressWrapper */
+.progress-container {
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 500px; /* Limita a largura máxima */
+  background-color: #f0f0f0; /* Fundo cinza claro */
+  border-radius: 5px; /* Cantos arredondados */
+  position: relative; /* Permite posicionar o contador dentro */
+  margin: 20px auto; /* Centraliza com margem vertical */
+}
+
+/* Barra de progresso em si */
+.progress-bar {
+  width: 0%; /* Largura inicial zero, ajustada via JavaScript */
+  height: 30px; /* Altura fixa */
+  background-color: #4caf50; /* Verde para indicar progresso */
+  text-align: center; /* Centraliza o texto dentro da barra */
+  line-height: 30px; /* Alinha o texto verticalmente */
+  color: white; /* Texto branco */
+  border-radius: 5px; /* Cantos arredondados */
+  transition: width 0.3s ease; /* Transição suave na largura */
+}
+
+/* Contador de questões restantes dentro de #progressWrapper */
+#remainingQuestions {
+  position: absolute; /* Posiciona sobre a barra de progresso */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta para o centro exato */
+  font-size: 16px; /* Tamanho da fonte do contador */
+}
+
+/* ================================
+   ESTILOS DE SOBREPOSIÇÕES (OVERLAYS)
+================================ */
+/* Sobreposições para seleção de temas, teclado e menu hambúrguer */
+#themeOverlay, #keyboardOverlay, #hamburgerMenu {
+  position: fixed; /* Fixa sobre toda a tela */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a altura */
+  background: rgba(0, 0, 0, 0.6); /* Fundo cinza escuro semi-transparente */
+  display: none; /* Oculta inicialmente até ser ativada */
+  z-index: 1000; /* Fica acima do conteúdo principal */
+}
+
+/* Conteúdo dentro das sobreposições */
+.overlay-content {
+  background: #fff; /* Fundo branco para o conteúdo */
+  width: 300px; /* Largura fixa */
+  max-height: 80vh; /* Limita a altura a 80% da tela */
+  margin: 20px auto; /* Centraliza com margem vertical */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  text-align: left; /* Alinha texto à esquerda */
+  position: relative; /* Permite posicionar o botão de fechar */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Títulos <h2> dentro das sobreposições */
+.overlay-content h2 {
+  margin-top: 0; /* Remove margem superior */
+  font-size: 1.2em; /* Tamanho da fonte do título */
+}
+
+/* Rótulos <label> para checkboxes ou inputs nas sobreposições */
+.overlay-content label {
+  display: block; /* Exibe como bloco */
+  margin-bottom: 10px; /* Espaço abaixo de cada rótulo */
+  font-size: 1em; /* Tamanho padrão da fonte */
+  cursor: pointer; /* Indica que é clicável */
+}
+
+/* Checkboxes dentro das sobreposições (ex.: seleção de temas) */
+.overlay-content input[type="checkbox"] {
+  margin-right: 10px; /* Espaço à direita da checkbox */
+  cursor: pointer; /* Indica interatividade */
+}
+
+/* Botão de aplicar dentro das sobreposições (ex.: "Aplicar Tópicos") */
+.overlay-content button {
+  margin-top: 20px; /* Espaço acima do botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 1em; /* Tamanho da fonte */
+  background-color: #28a745; /* Fundo verde */
+  color: #fff; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Indica que é clicável */
+  display: block; /* Exibe como bloco */
+  width: 100%; /* Ocupa toda a largura */
+}
+
+/* Botões de fechar as sobreposições */
+#closeKeyboardBtn, #closeThemeOverlayBtn, #closeSearchBtn {
+  position: absolute; /* Posiciona no canto superior direito */
+  top: 10px; /* Distância do topo */
+  right: 10px; /* Distância da direita */
+  background: #dc3545; /* Fundo vermelho */
+  color: #fff; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 50%; /* Forma circular */
+  width: 30px; /* Largura fixa */
+  height: 30px; /* Altura fixa */
+  cursor: pointer; /* Indica interatividade */
+  font-weight: bold; /* Texto em negrito */
+  transition: background 0.3s; /* Transição na cor de fundo */
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 0; /* Remove padding padrão */
+  margin: 0; /* Remove margem padrão */
+}
+
+/* Efeito hover nos botões de fechar */
+#closeKeyboardBtn:hover, #closeThemeOverlayBtn:hover, #closeSearchBtn:hover {
+  background: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* ================================
+   ESTILOS DO TECLADO NUMÉRICO
+================================ */
+/* Container dos botões do teclado numérico no #keyboardOverlay */
+#keyboardContainer {
+  display: grid; /* Usa grid para organizar os botões */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Cada botão do teclado numérico */
+.keyboard-btn {
+  padding: 20px; /* Espaçamento interno generoso */
+  font-size: 1.2em; /* Fonte maior para legibilidade */
+  background-color: #f0f0f0; /* Fundo cinza claro */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Indica que é clicável */
+}
+
+/* Efeito hover nos botões do teclado */
+.keyboard-btn:hover {
+  background-color: #e0e0e0; /* Cinza mais escuro ao passar o mouse */
+}
+
+/* Campo de entrada para exibir a quantidade de questões no #keyboardOverlay */
+#quantityInput {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1.2em; /* Fonte maior para destaque */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço abaixo */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* ================================
+   ESTILOS DO MENU HAMBÚRGUER
+================================ */
+/* Botão que abre o menu hambúrguer no canto superior esquerdo */
+#hamburgerBtn {
+  position: absolute; /* Posiciona fixamente no container */
+  top: 10px; /* Distância do topo */
+  left: 10px; /* Distância da esquerda */
+  font-size: 24px; /* Tamanho grande para o ícone */
+  background: none; /* Sem fundo */
+  border: none; /* Sem borda */
+  cursor: pointer; /* Indica interatividade */
+  z-index: 1001; /* Fica acima das sobreposições */
+}
+
+/* Conteúdo do menu hambúrguer exibido em #hamburgerMenu */
+#hamburgerMenuContent {
+  background: #fff; /* Fundo branco */
+  width: 250px; /* Largura fixa */
+  margin: 50px auto; /* Centraliza com margem superior */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Botões dentro do menu hambúrguer (ex.: "Página inicial", "Encontrar Questões") */
+#hamburgerMenuContent button {
+  display: block; /* Exibe como bloco */
+  width: 100%; /* Ocupa toda a largura */
+  margin: 10px 0; /* Margem vertical entre botões */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1em; /* Tamanho padrão da fonte */
+  background-color: #007BFF; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Indica interatividade */
+}
+
+/* ================================
+   ESTILOS DA TELA DE PESQUISA
+================================ */
+/* Sobreposição da tela de pesquisa em #searchScreen */
+#searchScreen {
+  position: fixed; /* Fixa sobre toda a tela */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a altura */
+  background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+  display: none; /* Oculta até ser ativada */
+  z-index: 1200; /* Fica acima de outras sobreposições */
+  overflow-y: auto; /* Rolagem vertical se necessário */
+  padding-top: 40px; /* Espaço no topo para evitar sobreposição com o botão de fechar */
+}
+
+/* Conteúdo da tela de pesquisa dentro de #searchScreen */
+#searchScreen .overlay-content {
+  background: #fff; /* Fundo branco */
+  width: 90%; /* Largura responsiva */
+  max-width: 500px; /* Largura máxima */
+  margin: 20px auto; /* Centraliza com margem vertical */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  text-align: left; /* Alinha texto à esquerda */
+  position: relative; /* Permite posicionar o botão de fechar */
+  overflow-y: auto; /* Rolagem vertical se necessário */
+}
+
+/* Ajuste de largura para telas maiores */
+@media (min-width: 1024px) {
+  #searchScreen .overlay-content {
+    width: 600px; /* Largura maior em telas grandes */
+    max-width: 600px; /* Limite máximo ajustado */
+  }
+}
+
+/* Título da tela de pesquisa */
+#searchScreen h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Rótulos para campos de filtro na tela de pesquisa */
+#searchScreen label {
+  display: block; /* Exibe como bloco */
+  margin-bottom: 5px; /* Espaço abaixo */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Campos de seleção e texto na tela de pesquisa */
+#searchScreen select,
+#searchScreen input[type="text"] {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 8px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaço abaixo */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Lista de palavras-chave na tela de pesquisa */
+#keywordsList {
+  list-style: none; /* Remove marcadores */
+  padding: 0; /* Remove padding */
+  margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Cada item da lista de palavras-chave */
+#keywordsList li {
+  background: #f0f0f0; /* Fundo cinza claro */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 20px; /* Bordas bem arredondadas */
+  display: inline-block; /* Exibe em linha */
+  margin: 5px; /* Espaçamento entre itens */
+}
+
+/* Botão de remover palavra-chave */
+.remove-keyword {
+  margin-left: 5px; /* Espaço à esquerda */
+  color: #dc3545; /* Cor vermelha */
+  cursor: pointer; /* Indica interatividade */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Container dos botões "Pesquisar" e "Limpar Filtros" */
+.search-buttons {
+  display: flex; /* Usa flexbox para alinhar os botões */
+  gap: 10px; /* Espaçamento entre botões */
+  margin-top: 10px; /* Espaço acima */
+}
+
+/* Estilo base para os botões de pesquisa e limpar */
+.search-buttons button {
+  flex: 1; /* Divide o espaço igualmente */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Indica interatividade */
+  transition: background 0.3s; /* Transição na cor */
+  font-size: 1em; /* Tamanho padrão da fonte */
+}
+
+/* Botão "Pesquisar" */
+.search-buttons button:first-child {
+  background: #28a745; /* Fundo verde */
+  color: #fff; /* Texto branco */
+}
+
+/* Efeito hover no botão "Pesquisar" */
+.search-buttons button:first-child:hover {
+  background: #218838; /* Verde mais escuro */
+}
+
+/* Botão "Limpar Filtros" */
+.search-buttons button:last-child {
+  background: #dc3545; /* Fundo vermelho */
+  color: #fff; /* Texto branco */
+}
+
+/* Efeito hover no botão "Limpar Filtros" */
+.search-buttons button:last-child:hover {
+  background: #c82333; /* Vermelho mais escuro */
+}
+
+/* Cada resultado exibido na tela de pesquisa */
+.search-result {
+  background: #fff; /* Fundo branco */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaço abaixo */
+  border-radius: 4px; /* Cantos arredondados */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+/* ================================
+   ESTILOS ADICIONAIS
+================================ */
+/* Área de feedback exibida após responder uma questão no #feedback */
+.feedback {
+  margin-top: 20px; /* Espaço acima */
+  font-weight: bold; /* Texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.2em; /* Fonte maior para destaque */
+}
+
+/* Container dos resultados exibido ao final do simulado */
+#resultContainer {
+  text-align: center; /* Centraliza o conteúdo */
+  margin-top: 50px; /* Espaço acima para separar do quiz */
+}
+
+/* Cada questão exibida nos resultados */
+.result-question {
+  border: 1px solid #ccc; /* Borda cinza clara */
+  padding: 10px; /* Espaçamento interno */
+  margin: 10px 0; /* Margem vertical */
+  border-radius: 4px; /* Cantos arredondados */
+  text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Texto do tema da questão nos resultados ou tela de pesquisa */
+.theme {
+  font-size: 0.8em; /* Fonte menor */
+  color: #777; /* Cinza claro */
+  margin-bottom: 5px; /* Espaço abaixo */
+}
+
+/* Classe utilitária para ocultar elementos, como a resposta na tela de pesquisa até clicar em "Exibir Resposta" */
+.hidden {
+  display: none; /* Remove o elemento da renderização, usado em #searchScreen para ocultar respostas ou em outros elementos dinâmicos */
+}
