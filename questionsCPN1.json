@@ -829,8 +829,8 @@
     "id": 121,
     "theme": "Tipos de Ensaios Não Destrutivos",
     "question": "Qual método de END requer a aplicação de um campo magnético na peça?",
-    "options": ["Ensaio por correntes parasitas.", "Ensaio por partículas magnéticas.", "Ensaio por termografia.", "Ensaio visual."],
-    "answer": 1
+    "options": ["Ensaio por correntes parasitas.", "Ensaio por partículas magnéticas.", "Tanto a alternativa A quanto a B estão corretas.", "Nenhuma das alternativas anteriores está correta."],
+    "answer": 2
   },
   {
     "id": 122,
