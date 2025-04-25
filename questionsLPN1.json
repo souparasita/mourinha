@@ -1,0 +1,770 @@
+[
+  {
+    "id": 1,
+    "theme": "Apostila",
+    "question": "A diferença entre descontinuidade e defeito é?",
+    "options": [
+      "O defeito é uma imperfeição grande e descontinuidade é uma imperfeição pequena.",
+      "A descontinuidade é sempre um defeito.",
+      "Uma descontinuidade é sempre inaceitável enquanto que o defeito pode não afetar o serviço da peça ou componente.",
+      "O defeito é uma descontinuidade que pode comprometer o serviço ou performance da peça, enquanto que descontinuidade é uma falha na estrutura da peça que pode ou não comprometer a peça."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "theme": "Apostila",
+    "question": "Uma vantagem do ensaio por líquidos penetrantes, em relação aos demais E.N.D., é?",
+    "options": [
+      "O método pode ser aplicado em todos os materiais.",
+      "O método não necessita de preparação da superfície.",
+      "O ensaio pode detectar qualquer descontinuidade.",
+      "O método é mais simples, e de fácil interpretação dos resultados."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 3,
+    "theme": "Apostila",
+    "question": "Quais dos materiais abaixo, o ensaio por líquidos penetrantes não é aplicável?",
+    "options": [
+      "Aços inoxidáveis e plásticos",
+      "Materiais forjados ou fundidos",
+      "Materiais porosos",
+      "Nenhuma das alternativas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "theme": "Apostila",
+    "question": "Qual das seguintes alternativas corresponde a desvantagens para o ensaio por líquidos penetrantes quando comparado a outros métodos?",
+    "options": [
+      "Não pode ser aplicado a altas temperaturas",
+      "Somente detecta descontinuidades abertas para a superfície.",
+      "Necessita preparação da superfície.",
+      "As alternativas (a) e (b) são corretas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "theme": "Apostila",
+    "question": "Qual das seguintes descontinuidades não pode ser detectada pelo ensaio por líquidos penetrantes?",
+    "options": [
+      "Uma trinca subsuperficial",
+      "Uma inclusão subsuperficial numa solda",
+      "Uma falta de fusão entre passes numa solda",
+      "Todas as alternativas são verdadeiras."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 6,
+    "theme": "Apostila",
+    "question": "O método de ensaio por líquidos penetrantes está baseado, principalmente, nas propriedades de ...................... dos líquidos.",
+    "options": [
+      "Tensão superficial e capilaridade.",
+      "Densidade específica e viscosidade",
+      "Penetrabilidade e viscosidade cinemática",
+      "Densidade específica e capilaridade"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 7,
+    "theme": "Apostila",
+    "question": "Quais das seguintes descontinuidades podem ser detectadas por líquidos penetrantes?",
+    "options": [
+      "Porosidade superficial",
+      "Trincas superficiais com abertura acima de 10 µm",
+      "Dupla laminação na borda de chapas",
+      "Todas as alternativas são corretas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 8,
+    "theme": "Apostila",
+    "question": "Qual das propriedades abaixo é importante que nenhum penetrante possua?",
+    "options": [
+      "Alto poder de capilaridade",
+      "Boa molhabilidade",
+      "Secagem rápida",
+      "Alta tensão superficial"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "theme": "Apostila",
+    "question": "Qual das seguintes propriedades é desejável que um bom penetrante deva ter?",
+    "options": [
+      "Baixa viscosidade",
+      "Alto grau de molhabilidade",
+      "Ponto de fulgor não inferior a 90°C",
+      "Todas as alternativas são corretas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 10,
+    "theme": "Apostila",
+    "question": "Os penetrantes foram desenvolvidos para penetrar em aberturas superficiais:",
+    "options": [
+      "Quaisquer",
+      "Somente com aberturas maiores que 0,1 mm",
+      "Com dimensões maiores que 1µm",
+      "Lineares ou arredondadas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "theme": "Apostila",
+    "question": "Qual das afirmativas abaixo é verdadeira?",
+    "options": [
+      "A preparação da superfície no ensaio por LP, é somente importante se a superfície da peça estiver contaminada com óleo ou graxa.",
+      "O esmerilhamento na preparação da superfície para ensaio por LP deve ser sempre evitado quando possível.",
+      "A temperatura não tem influência no ensaio por LP.",
+      "Trinca de cratera na superfície da solda não pode ser detectada pelo ensaio de líquidos penetrantes."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "theme": "Apostila",
+    "question": "O método mais desejável para a remoção do excesso de penetrante removível com solvente é:",
+    "options": [
+      "Jato de água e detergente, com baixa pressão.",
+      "Forte jato de solvente qualificado",
+      "Escova e pano úmido com solvente",
+      "Pano limpo umedecido com solvente adequado"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 13,
+    "theme": "Apostila",
+    "question": "A borda de um chanfro preparado para soldagem foi cortado com o processo de oxicorte. Neste caso, na preparação da superfície para o ensaio por líquidos penetrantes, pode ser feita?",
+    "options": [
+      "Usando-se apenas escova.",
+      "Por limagem",
+      "Por limpeza com solvente e pano limpo.",
+      "Por esmerilhamento"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 14,
+    "theme": "Apostila",
+    "question": "Ao se adquirir um lote de penetrante, devemos:",
+    "options": [
+      "Verificar se o produto está qualificado pelo procedimento aprovado",
+      "Efetuar teste de sensibilidade numa amostra do lote, usando padrão conhecido.",
+      "Verificar a data de validade do lote.",
+      "Todas as alternativas são aplicáveis."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 15,
+    "theme": "Apostila",
+    "question": "A primeira etapa para a inspeção por líquidos penetrantes, numa superfície que se encontra pintada é:",
+    "options": [
+      "Aplicar o penetrante com relativo cuidado na superfície.",
+      "Lavar minuciosamente a superfície com detergente.",
+      "Remover completamente a pintura.",
+      "Escovar a superfície até reduzir a camada de tinta à metade."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "theme": "Apostila",
+    "question": "Qual das técnicas abaixo podem ser utilizadas para a aplicação do líquido penetrante?",
+    "options": [
+      "Mergulhando a peça em banho no penetrante.",
+      "Pulverizando o penetrante sobre a peça.",
+      "Através de rolo de pintura.",
+      "Todas as técnicas acima podem ser utilizadas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 17,
+    "theme": "Apostila",
+    "question": "Qual das técnicas abaixo é mais recomendada para a aplicação do revelador não aquoso?",
+    "options": [
+      "Com pincel macio",
+      "Com rolo de pintura",
+      "Por pulverização",
+      "Todas as técnicas podem ser utilizadas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "theme": "Apostila",
+    "question": "O termo usado para definir o período de tempo que o penetrante fica sobre a superfície ensaiada denomina-se:",
+    "options": [
+      "Tempo de espera",
+      "Tempo de escoamento",
+      "Tempo de impregnação",
+      "Tempo de penetração"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 19,
+    "theme": "Apostila",
+    "question": "A técnica mais comum de se verificar se o excesso de líquido penetrante fluorescente foi totalmente removido, antes da aplicação do revelador é:",
+    "options": [
+      "Aplicar um jato de ar comprimido sobre a superfície",
+      "Examinar a superfície, com luz ultravioleta",
+      "Examinar a superfície, com luz infravermelha",
+      "Passar pano limpo ou papel sobre a superfície, para observar resíduos de penetrante."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "theme": "Apostila",
+    "question": "Para a aplicação do revelador aquoso no ensaio por líquidos penetrantes laváveis com água, a superfície:",
+    "options": [
+      "Não precisa de estar seca, mas isenta de penetrante",
+      "Não precisa estar isenta de resíduos de penetrante",
+      "Necessita estar limpa, sem resíduos de penetrante e seca.",
+      "Não pode ser lisa ou usinada"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 21,
+    "theme": "Apostila",
+    "question": "O problema do reensaio de uma peça por líquido penetrante que já tenha sido ensaiada por este método a meses é:",
+    "options": [
+      "O penetrante perderá parte de seu brilho e cor",
+      "O penetrante terá dificuldade na molhabilidade da superfície",
+      "O resíduo seco de penetrante dentro das descontinuidades pode não dissolver, apresentando resultados pouco confiáveis.",
+      "Todas as alternativas são corretas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "theme": "Apostila",
+    "question": "A finalidade do uso do revelador no ensaio por líquidos penetrantes é:",
+    "options": [
+      "Facilitar a ação de capilaridade do penetrante",
+      "Absorver os resíduos emulsificantes",
+      "Absorver o penetrante de dentro das descontinuidades e proporcionar um fundo branco.",
+      "Reagir com os resíduos de penetrante na superfície"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 23,
+    "theme": "Apostila",
+    "question": "Um ensaio por líquidos penetrantes, realizado utilizando-se produtos classificados como sistema Tipo II-C, necessariamente o excesso de penetrante deve ser removido por:",
+    "options": [
+      "Escovamento com água",
+      "Pano limpo sem fiapos, umedecida com solvente",
+      "Jato de água com pressão e temperatura controladas",
+      "Emulsificação e posterior lavagem com água"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "theme": "Apostila",
+    "question": "No ensaio por líquidos penetrantes de uma solda, o inspetor utilizou-se de uma luz negra para realizar o laudo final. Conclui-se que:",
+    "options": [
+      "O inspetor deve ter se enganado com o tipo de luz recomendada para iluminação da superfície.",
+      "O inspetor deve ter utilizado revelador fluorescente",
+      "O inspetor deve ter utilizado penetrante classificado como Tipo I.",
+      "O inspetor deve ter utilizado a luz negra para aquecer a superfície, até a temperatura permitida."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 25,
+    "theme": "Apostila",
+    "question": "Os tipos de reveladores que dispomos para a inspeção por líquidos penetrantes são?",
+    "options": [
+      "Pós secos.",
+      "Não aquosos",
+      "Aquosos",
+      "Todas as alternativas são corretas."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 26,
+    "theme": "Apostila",
+    "question": "Quanto à iluminação ambiente para a inspeção por líquidos penetrantes visível com luz natural de acordo com ASME Sec.V Art. 6?",
+    "options": [
+      "Não há nenhum requisito importante.",
+      "Deve ser de no mínimo 500 lux.",
+      "Deve atender no mínimo de 1000 lux, sobre a superfície.",
+      "A luz deve ser apenas branca."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 27,
+    "theme": "Apostila",
+    "question": "Qual das seguintes é causa para o mascaramento ou não aparecimento das indicações?",
+    "options": [
+      "Lavagem e remoção vigorosa do excesso de penetrante",
+      "Camada excessiva de revelador",
+      "Limpeza do excesso de penetrante por pulverização de solvente sobre a superfície",
+      "Todas as alternativas são verdadeiras"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 28,
+    "theme": "Apostila",
+    "question": "O tipo de penetrante classificado como 'Tipo II C' de acordo com ASME SEC.V SE-165, trata-se de:",
+    "options": [
+      "Penetrante fluorescente, lavável com água.",
+      "Penetrante visível com luz natural, lavável com água.",
+      "Penetrante visível com luz natural, removível com solvente.",
+      "Penetrante fluorescente, removível com solvente."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 29,
+    "theme": "Apostila",
+    "question": "O tipo de penetrante classificado como 'Tipo I A' de acordo com ASME SEC.V SE-165, trata-se de:",
+    "options": [
+      "Penetrante fluorescente, lavável com água.",
+      "Penetrante visível com luz natural, lavável com água.",
+      "Penetrante visível com luz natural, removível com solvente.",
+      "Penetrante fluorescente, removível com solvente."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "theme": "Apostila",
+    "question": "Quando utilizamos penetrantes do Tipo II A, a remoção do excesso de penetrante da superfície, deve ser feita:",
+    "options": [
+      "Com pano limpo, umedecido com removedor",
+      "Com jato de água, com pressão e temperatura controlada",
+      "Após a aplicação do emulsificador, com uso de jato de água controlado.",
+      "Por imersão da peça no removedor"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 31,
+    "theme": "Apostila",
+    "question": "Qual o método mais recomendável para preparação da superfície antes do ensaio por líquidos penetrantes?",
+    "options": [
+      "Por limagem suave.",
+      "Esmerilhamento.",
+      "Escovamento manual ou rotativo.",
+      "Limagem."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 32,
+    "theme": "Apostila",
+    "question": "Das afirmações abaixo, qual a que define melhor o problema no uso de esmeril na limpeza prévia da superfície?",
+    "options": [
+      "A descontinuidade pode ser aquecida e se expandir",
+      "O óleo contaminante que é pulverizado pode ser fechado dentro da descontinuidade.",
+      "O metal arrancado na superfície pode fechar a descontinuidade, impedindo que o penetrante, entre na cavidade.",
+      "A operação com esmeril pode produzir outras descontinuidades."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 33,
+    "theme": "Apostila",
+    "question": "A preparação da superfície de uma junta soldada de aço inoxidável austenítico, deve ser feita:",
+    "options": [
+      "Da mesma maneira que aço carbono",
+      "Com escovamento manual ou rotativo",
+      "Com o uso de solventes ou limpeza química",
+      "Com o uso de escovas ou ferramentas revestidas de mesmo material"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 34,
+    "theme": "Apostila",
+    "question": "Uma forma usual de se fazer uma qualificação de produtos penetrantes ou mesmo testar o produto penetrante adquirido é:",
+    "options": [
+      "Determinando a viscosidade dos produtos",
+      "Comparar os resultados obtidos no ensaio de um bloco-padrão de líquido penetrante",
+      "Medir a umidade dos produtos",
+      "Todas as alternativas devem ser aplicadas"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 36,
+    "theme": "Apostila",
+    "question": "A função do emulsificador é?",
+    "options": [
+      "Reagir com o penetrante tornando-o lavável com água",
+      "Melhorar o brilho vermelho do penetrante",
+      "Aumentar o poder de penetração do penetrante, após a reação",
+      "Aumentar a fluidez e a molhabilidade do penetrante"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 37,
+    "theme": "Apostila",
+    "question": "Uma vantagem do revelador aquoso é?",
+    "options": [
+      "As indicações possuem cores mais vivas",
+      "Não escorre depois de haver sido aplicado",
+      "Não emite vapores inflamáveis",
+      "Todas as alternativas são corretas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 38,
+    "theme": "Apostila",
+    "question": "Quando aplicamos um penetrante de um lado de uma peça e procedemos a revelação pelo lado oposto a esta mesma peça, estamos realizando?",
+    "options": [
+      "Um procedimento em desacordo com as normas",
+      "Um ensaio de estanqueidade por líquido penetrante",
+      "A qualificação dos produtos",
+      "Este procedimento não pode ser executado, em nenhum caso"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "theme": "Apostila",
+    "question": "No ensaio de uma peça por líquidos penetrantes, o processo de esmerilhamento para limpeza prévia.....",
+    "options": [
+      "Não é recomendado, pois poderá haver obstrução das aberturas na superfície.",
+      "Pode ser utilizado desde que for de material abrasivo do tipo óxido de alumínio.",
+      "As aberturas superficiais se tornarão mais fáceis de serem observadas.",
+      "O tempo de penetração deverá ser aumentado para compensar."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 40,
+    "theme": "Apostila",
+    "question": "A avaliação final (fechamento do laudo) do ensaio por líquidos penetrantes conforme ASME Sec.V Art. 6 deve ser feita?",
+    "options": [
+      "Após um período de 10 minutos observando o tamanho real das indicações",
+      "Em 60 minutos, observando o tamanho da mancha do líquido penetrante difundido no revelador, e comparando com o critério de aceitação.",
+      "Imediatamente após a aplicação do revelador aplicando o critério de aceitação estabelecido.",
+      "Após um tempo de revelação que o inspetor desejar observando o tamanho da mancha difundido no revelador e comparando com os critérios de aceitação aplicáveis."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "theme": "Apostila",
+    "question": "No ensaio por líquidos penetrantes, de acordo com o Código ASME o tempo de penetração depende?",
+    "options": [
+      "Do tipo de material a ser ensaiado",
+      "Do tipo do líquido penetrante utilizado",
+      "Do acabamento superficial da peça",
+      "As alternativas (a) e (b) são corretas"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 42,
+    "theme": "Apostila",
+    "question": "A faixa limite de temperatura padrão que a superfície pode estar para ser aplicado o ensaio por líquidos penetrantes, conforme o ASME Sec.V Art. 6 é?",
+    "options": [
+      "5 a 52°C",
+      "5 a 50°C",
+      "16 a 60°C",
+      "15 a 60°C"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 43,
+    "theme": "Apostila",
+    "question": "Qual a iluminação mínima recomendável de luz UV quando utilizando penetrantes fluorescentes, conforme ASME Sec. V Art. 6?",
+    "options": [
+      "800 μW/cm²",
+      "1000 lux",
+      "540 lux",
+      "1000 μW/cm²"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 44,
+    "theme": "Apostila",
+    "question": "Qual é a única fase do ensaio por líquidos penetrantes, que é exigido uma certa habilidade manual do inspetor?",
+    "options": [
+      "Na aplicação do penetrante",
+      "Na limpeza inicial",
+      "Na aplicação do revelador",
+      "Na agitação dos produtos aerosol"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 45,
+    "theme": "Apostila",
+    "question": "As avaliações intermediárias, após a aplicação do revelador são necessárias para?",
+    "options": [
+      "Definir a forma da indicação e diferenciar entre arredondada e linear.",
+      "Registrar e dimensionar as indicações maiores que mancham rapidamente o penetrante.",
+      "Verificar se não vai ocorrer contaminações durante a revelação das indicações.",
+      "Facilitar o registro final das indicações."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 46,
+    "theme": "Apostila",
+    "question": "Qual das afirmações abaixo é verdadeira?",
+    "options": [
+      "O ensaio por LP pode avaliar profundidade de trincas",
+      "O ensaio por LP pode detectar qualquer descontinuidade superficial",
+      "Uma camada de revelador mais fina proporciona melhor sensibilidade no ensaio por LP.",
+      "Penetrantes fluorescentes são menos sensíveis que os visíveis com luz natural"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 47,
+    "theme": "Apostila",
+    "question": "Na inspeção de soldas em aço carbono na temperatura de 25°C o tempo de penetração, de acordo com o recomendado no ASME Sec. V Art. 6 deve ser no mínimo de?",
+    "options": [
+      "5 minutos",
+      "10 minutos",
+      "30 minutos",
+      "Depende se o produto é lavável a água ou removível com solvente"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 48,
+    "theme": "Apostila",
+    "question": "Qual das alternativas define melhor a função do profissional Nível II certificado para o ensaio por líquidos penetrantes, de acordo com SNQC?",
+    "options": [
+      "Interpretar códigos e normas sobre o método",
+      "Relatar e julgar os resultados do ensaio",
+      "Orientar o profissional Nível I",
+      "As alternativas (b) e (c) são corretas"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 50,
+    "theme": "Apostila",
+    "question": "A limpeza do excesso de líquido penetrante lavável a água, deve ser feita através de?",
+    "options": [
+      "Por jato vigoroso de água sobre a superfície.",
+      "Por pano umedecido com solvente.",
+      "Por jato de água com pressão e temperatura controlada.",
+      "Escovas especiais."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 51,
+    "theme": "Apostila",
+    "question": "A naturezas das inclusões em juntas soldadas podem ser?",
+    "options": [
+      "Metálicas",
+      "Escórias",
+      "Não metálicas",
+      "Todas as alternativas são corretas"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 52,
+    "theme": "Apostila",
+    "question": "Um inspetor estabeleceu um procedimento de ensaio de líquidos penetrantes para determinar profundidade de trincas por este método. Qual das alternativas é correta?",
+    "options": [
+      "Isto é possível desde que o inspetor tenha um corpo de prova padrão.",
+      "Isto é possível desde que o inspetor utilize penetrante removível com solvente.",
+      "Este método de ensaio não foi desenvolvido para esta finalidade.",
+      "Isto somente é possível se a trinca tiver pelo menos 10 µm de abertura."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 54,
+    "theme": "Apostila",
+    "question": "Qual dos métodos abaixo é que deve ser utilizado jato de água com pressão e temperatura controlada?",
+    "options": [
+      "Na lavagem do excesso de penetrante lavável em água.",
+      "Na lavagem do revelador após o ensaio.",
+      "Na limpeza prévia do ensaio por líquido penetrante.",
+      "Nunca deve ser utilizada tal técnica no ensaio por líquido penetrante."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 55,
+    "theme": "Apostila",
+    "question": "O inspetor de líquidos penetrantes, após aplicar o revelador foi almoçar, voltando depois de 50 minutos. De acordo com ASME Sec. V Art. 6, é aceitável a conduta do inspetor?",
+    "options": [
+      "Sim.",
+      "Sim, se o inspetor for qualificado.",
+      "Sim, pois o limite é 60 minutos para o laudo final.",
+      "Não."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 56,
+    "theme": "Apostila",
+    "question": "A temperatura no ensaio por líquidos penetrantes.....",
+    "options": [
+      "É um fator importante que deve ser controlado para a realização do ensaio.",
+      "Não é um fator importante, pois a temperatura pode oscilar de um local para o outro.",
+      "Deve estar pelo menos sempre acima da temperatura ambiente.",
+      "Sómente é importante quando do ensaio de peças sensíveis a alterações de temperatura."
+    ],
+    "answer": 0
+  },
+  {
+    "id": 57,
+    "theme": "Apostila",
+    "question": "Qual dos produtos abaixo é mais indicado para limpeza prévia de uma peça contendo resíduos oleosos?",
+    "options": [
+      "Limpeza com água.",
+      "Escovamento com querosene.",
+      "Uso de solventes ou removedores.",
+      "Todas as alternativas."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 59,
+    "theme": "Apostila",
+    "question": "Se uma certa quantidade de um produto penetrante possui data de validade vencida. Neste caso:",
+    "options": [
+      "O inspetor pode usar normalmente pois este produto possui uma validade que pode ser estendida.",
+      "O inspetor pode misturar na proporção de 50% este produto, com outro dentro do período de validade, assegurando boa sensibilidade no ensaio.",
+      "O produto deve ser descartado.",
+      "O inspetor deve procurar o fabricante para conseguir uma validade maior do produto."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 61,
+    "theme": "Apostila",
+    "question": "Qual dos exames físicos abaixo o inspetor de líquidos penetrantes Nível 1 ou 2 deve estar aprovado?",
+    "options": [
+      "Exame radiográfico do pulmão.",
+      "Exame de acuidade visual no mínimo J2 e contraste de cores.",
+      "Exame de hemograma.",
+      "Todos acima são importantes."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 62,
+    "theme": "Apostila",
+    "question": "Se durante o processo de revelação, ocorrer um escorrimento do produto revelador na superfície da peça. Então:",
+    "options": [
+      "Não há problema, pois isto não influirá no resultado do ensaio.",
+      "O inspetor deverá remover com pano limpo a área afetada e reaplicar o produto.",
+      "O inspetor deverá repetir o ensaio desde o começo, sobre a área afetada.",
+      "O escorrimento é difícil de ocorrer."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 63,
+    "theme": "Apostila",
+    "question": "Qual das seguintes, poderia ser uma fonte para falsas indicações sobre a superfície da peça, no ensaio por líquidos penetrantes?",
+    "options": [
+      "Resíduo de penetrante sobre a bancada de ensaio.",
+      "Penetrante nas mãos do inspetor.",
+      "Contaminação do revelador com penetrante.",
+      "Todas as alternativas são possíveis."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 64,
+    "theme": "Apostila",
+    "question": "Qual dos instrumentos de medição abaixo é importante e mais comum para a avaliação das indicações no ensaio por líquidos penetrantes?",
+    "options": [
+      "Lupa graduada.",
+      "Micrômetro calibrado.",
+      "Goniômetro.",
+      "Trena, escala ou régua calibrada em 'mm'."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 65,
+    "theme": "Apostila",
+    "question": "O resultado das forças de coesão entre as moléculas que formam a superfície dos líquidos é conhecido como uma propriedade denominada?",
+    "options": [
+      "Molhabilidade",
+      "Inércia química",
+      "Penetrabilidade",
+      "Tensão superficial"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 66,
+    "theme": "Apostila",
+    "question": "O ponto de fulgor dos líquidos é um fator importante para a segurança de sua utilização. Em geral, os fabricantes desses produtos o fazem com qual ponto de fulgor?",
+    "options": [
+      ">100°C",
+      ">90°C",
+      ">300°C",
+      ">500°C"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 67,
+    "theme": "Apostila",
+    "question": "Um feixe de luz ao atravessar uma solução colorida é absorvido de forma constante e proporcional à espessura da camada de solução. Essa afirmação se deve a:",
+    "options": [
+      "Lei de Avogadro",
+      "Lei de Lambert",
+      "Lei de Beer",
+      "Lei de Brag"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 68,
+    "theme": "Apostila",
+    "question": "O líquido penetrante quando estocado não deve reagir com sua embalagem tampouco com o material a ser inspecionado quando utilizado. Esta propriedade denomina-se?",
+    "options": [
+      "Viscosidade",
+      "Tensão superficial",
+      "Inércia química",
+      "Volatilidade"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 69,
+    "theme": "Apostila",
+    "question": "Um inspetor de líquidos penetrantes, após aplicar o revelador, aguardou 60 minutos para a avaliação final, de acordo com ASME Sec. V Art. 6, mas, no entanto, ele teve que se retirar do local, chamando um outro inspetor para finalizar a interpretação e registro. Nessa situação:",
+    "options": [
+      "O inspetor agiu de acordo com a norma.",
+      "Não acorreu nenhum problema, se o inspetor for qualificado.",
+      "O inspetor não poderia ter deixado o local pois o segundo inspetor não acompanhou o aparecimento das indicações desde o início.",
+      "O inspetor aguardou muito tempo, acima do requerido pela norma."
+    ],
+    "answer": 2
+  }
+]
