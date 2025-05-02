@@ -659,6 +659,18 @@
     ],
     "answer": 2
   },
+    {
+    "id": 60,
+    "theme": "Apostila",
+    "question": "Um inspetor de líquidos penetrantes, após aplicar o revelador, aguardou 60 minutos para a avaliação final, de acordo com ASME Sec. V Art. 6, mas, no entanto, ele teve que se retirar do local, chamando um outro inspetor para finalizar a interpretação e registro. Nessa situação:",
+    "options": [
+      "O inspetor agiu de acordo com a norma.",
+      "Não acorreu nenhum problema, se o inspetor for qualificado.",
+      "O inspetor não poderia ter deixado o local pois o segundo inspetor não acompanhou o aparecimento das indicações desde o início.",
+      "O inspetor aguardou muito tempo, acima do requerido pela norma."
+    ],
+    "answer": 2
+  },
   {
     "id": 61,
     "theme": "Apostila",
@@ -752,18 +764,6 @@
       "Tensão superficial",
       "Inércia química",
       "Volatilidade"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 60,
-    "theme": "Apostila",
-    "question": "Um inspetor de líquidos penetrantes, após aplicar o revelador, aguardou 60 minutos para a avaliação final, de acordo com ASME Sec. V Art. 6, mas, no entanto, ele teve que se retirar do local, chamando um outro inspetor para finalizar a interpretação e registro. Nessa situação:",
-    "options": [
-      "O inspetor agiu de acordo com a norma.",
-      "Não acorreu nenhum problema, se o inspetor for qualificado.",
-      "O inspetor não poderia ter deixado o local pois o segundo inspetor não acompanhou o aparecimento das indicações desde o início.",
-      "O inspetor aguardou muito tempo, acima do requerido pela norma."
     ],
     "answer": 2
   },
