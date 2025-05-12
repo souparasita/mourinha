@@ -1906,5 +1906,713 @@
       "Porque causam hiperpigmentação da pele"
     ],
     "answer": 2
+  },
+  {
+    "id": 160,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual é a temperatura recomendada para a limpeza ultrassônica da peça com emulsificador hidrofílico?",
+    "options": [
+      "25° Celsius",
+      "35° Celsius",
+      "45° Celsius",
+      "55° Celsius"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 161,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo mínimo que o ultrassom deve permanecer ativo durante a limpeza ultrassônica?",
+    "options": [
+      "10 minutos",
+      "15 minutos",
+      "20 minutos",
+      "25 minutos"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 162,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Na secagem em estufa após a lavagem, qual é a faixa de temperatura recomendada?",
+    "options": [
+      "20°C a 40°C",
+      "30°C a 50°C",
+      "40°C a 60°C",
+      "50°C a 70°C"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 163,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual é a faixa de temperatura ambiente, da peça e do penetrante que deve ser garantida para o ensaio?",
+    "options": [
+      "0°C a 42°C",
+      "4°C a 52°C",
+      "10°C a 60°C",
+      "15°C a 65°C"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 164,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo máximo de penetração permitido antes que seja necessário reaplicar o penetrante?",
+    "options": [
+      "30 minutos",
+      "1 hora",
+      "1 hora e 30 minutos",
+      "2 horas"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 165,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Ao aplicar o penetrante por imersão, qual cuidado deve ser tomado em relação ao tempo de imersão?",
+    "options": [
+      "O tempo de imersão deve ser igual ao tempo de penetração.",
+      "O tempo de imersão não pode ultrapassar a metade do tempo de penetração.",
+      "O tempo de imersão deve ser de no mínimo 30 minutos.",
+      "O tempo de imersão não tem limite, desde que a peça esteja coberta."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 166,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Durante o escoamento do penetrante, quantas vezes, no mínimo, a peça deve ser rotacionada?",
+    "options": [
+      "1 vez",
+      "2 vezes",
+      "3 vezes",
+      "4 vezes"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 167,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a pressão máxima permitida para o jato d'água na remoção do excesso de penetrante?",
+    "options": [
+      "20 psi",
+      "30 psi",
+      "40 psi",
+      "50 psi"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 168,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a distância mínima que o jato d'água deve ser aplicado da peça ensaiada durante a remoção do excesso de penetrante?",
+    "options": [
+      "10 cm",
+      "20 cm",
+      "30 cm",
+      "40 cm"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 169,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a temperatura máxima permitida para a secagem da peça na estufa?",
+    "options": [
+      "Menor que 61°C",
+      "Menor que 71°C",
+      "Menor que 81°C",
+      "Menor que 91°C"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 170,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo mínimo de revelação permitido?",
+    "options": [
+      "5 minutos",
+      "10 minutos",
+      "15 minutos",
+      "20 minutos"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 171,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O tempo de revelação não pode ultrapassar quanto tempo, incluindo o tempo de inspeção?",
+    "options": [
+      "30 minutos",
+      "45 minutos",
+      "1 hora",
+      "2 horas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 172,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Por quanto tempo, no mínimo, a lata de revelador não aquoso deve ser agitada antes da aplicação?",
+    "options": [
+      "30 segundos",
+      "1 minuto",
+      "1 minuto e 30 segundos",
+      "2 minutos"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 173,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a consequência de uma camada espessa de revelador não aquoso?",
+    "options": [
+      "Aumenta a sensibilidade do ensaio.",
+      "Pode mascarar a descontinuidade.",
+      "Reduz o tempo de revelação.",
+      "Melhora a visualização de pequenas trincas."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 174,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a pressão máxima do ar comprimido para remover o excesso de revelador pó seco?",
+    "options": [
+      "2 psi",
+      "5 psi",
+      "10 psi",
+      "15 psi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 175,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a intensidade mínima de luz UV-A necessária para a inspeção, medida a 38,1 cm?",
+    "options": [
+      "500 μW/cm²",
+      "800 μW/cm²",
+      "1.000 μW/cm²",
+      "1.200 μW/cm²"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 176,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o nível máximo de luz branca permitido no ambiente escurecido durante a inspeção?",
+    "options": [
+      "10,5 lux",
+      "15,5 lux",
+      "21,5 lux",
+      "25,5 lux"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 177,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Que tipo de óculos de proteção deve ser utilizado durante a inspeção com luz UV-A?",
+    "options": [
+      "Óculos de lentes escuras",
+      "Óculos de lentes fotocromáticas",
+      "Óculos de proteção com filtro UV-A",
+      "Qualquer óculos de segurança transparente"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 178,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Quanto tempo uma lâmpada UV-A de mercúrio deve ser ligada antes de iniciar a inspeção?",
+    "options": [
+      "1 minuto",
+      "5 minutos",
+      "10 minutos",
+      "15 minutos"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 179,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo mínimo de espera no interior da cabine escurecida antes de iniciar a inspeção na peça, caso o inspetor tenha sido exposto à luz visível?",
+    "options": [
+      "30 segundos",
+      "1 minuto",
+      "2 minutos",
+      "5 minutos"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 180,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo máximo de permanência contínua no interior da cabine de inspeção, e qual o intervalo recomendado?",
+    "options": [
+      "1 hora, com intervalos de 10 minutos",
+      "1 hora e 30 minutos, com intervalos de 10 minutos",
+      "2 horas, com intervalos de 15 minutos",
+      "2 horas e 30 minutos, com intervalos de 20 minutos"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 181,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O que é definido como uma \"indicação\" durante a inspeção por líquido penetrante?",
+    "options": [
+      "Qualquer marcação feita pelo inspetor na peça.",
+      "Toda concentração de fluorescente que se destaque da fluorescência de fundo.",
+      "Apenas descontinuidades consideradas relevantes.",
+      "O reflexo da luz UV-A na superfície da peça."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 182,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O que deve ser feito caso a peça apresente excessiva fluorescência de fundo durante a inspeção?",
+    "options": [
+      "Prosseguir com a inspeção, ignorando a fluorescência de fundo.",
+      "Aumentar a intensidade da luz UV-A.",
+      "Limpar e reprocessar a peça.",
+      "Aplicar uma camada adicional de revelador."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 183,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Para qual nível de qualificação o critério de aceitação CA-IFI-021 rev. A é aplicável?",
+    "options": [
+      "Somente para o nível 1.",
+      "Somente para os níveis 2 e 3.",
+      "Para todos os níveis (1, 2 e 3).",
+      "Somente para o nível 3."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 184,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual instrumento é utilizado para a medição da indicação, conforme o procedimento?",
+    "options": [
+      "Imicro",
+      "Régua em radianos",
+      "Paquímetro",
+      "Medidor de espessura por ultrassom"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 185,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Ao medir o comprimento de uma descontinuidade, o que deve ser feito na área revelada antes da medição?",
+    "options": [
+      "Aplicar mais revelador na área.",
+      "Limpar a área com um pano umedecido com solvente.",
+      "Aquecer levemente a área para melhor visualização.",
+      "Resfriar a área para fixar a indicação."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 186,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como a fluorescência se apresenta em uma \"Inclusão (Superficial)\"?",
+    "options": [
+      "Como um ponto isolado.",
+      "Manchada no perímetro da inclusão.",
+      "Com vários pontos alinhados.",
+      "Com uma linha contínua."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 187,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Para uma \"Porosidade Individual (Superficial)\", qual dimensão é utilizada para a medida?",
+    "options": [
+      "A área total da fluorescência.",
+      "O menor diâmetro do ponto isolado.",
+      "O maior comprimento encontrado do ponto isolado.",
+      "A profundidade estimada da porosidade."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 188,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como é medida uma \"Porosidade alinhada (Superficial)\"?",
+    "options": [
+      "Medindo cada poro individualmente e somando os comprimentos.",
+      "Utilizando o maior comprimento encontrado, do início ao fim do alinhamento dos poros.",
+      "Calculando a área que engloba todos os poros alinhados.",
+      "Medindo a distância entre o primeiro e o último poro e dividindo pelo número de poros."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 189,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como é calculada a área de \"Porosidade e contrações agrupadas (com ligação a superfície)\"?",
+    "options": [
+      "Somando as áreas individuais de cada poro.",
+      "Medindo o maior diâmetro do agrupamento.",
+      "Através dos limites em que estes poros estão agrupados.",
+      "Multiplicando o número de poros pela área média de um poro."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 190,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a característica da fluorescência em descontinuidades propagáveis como trincas?",
+    "options": [
+      "Aparece manchada.",
+      "Apresenta-se como um ponto isolado.",
+      "Apresenta-se com vários pontos próximos.",
+      "Apresenta-se com uma linha contínua."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 191,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o prazo máximo para realizar a interpretação da inspeção após o início da revelação?",
+    "options": [
+      "30 minutos",
+      "1 hora",
+      "2 horas",
+      "4 horas"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 192,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Quais são as três classificações possíveis para as indicações analisadas?",
+    "options": [
+      "Pequena, média e grande.",
+      "Aceitável, reparável e rejeitável.",
+      "Falsas, irrelevantes e relevantes.",
+      "Superficiais, subsuperficiais e internas."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 193,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "No procedimento de wipe-off, como deve ser limpa a área da indicação duvidosa?",
+    "options": [
+      "Com um pano seco, esfregando vigorosamente.",
+      "Com um pano limpo levemente umedecido com removedor, passando na indicação em somente uma direção.",
+      "Com um pano embebido em água, aplicando em movimentos circulares.",
+      "Com uma escova de cerdas macias e solvente."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 194,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Após aplicar o revelador não aquoso na área da indicação duvidosa durante o wipe-off, quanto tempo se deve aguardar para a revelação?",
+    "options": [
+      "30 segundos",
+      "1 minuto",
+      "No mínimo 3 minutos",
+      "5 minutos"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 195,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Quantas vezes o procedimento de wipe-off pode ser realizado em uma mesma indicação duvidosa?",
+    "options": [
+      "Apenas uma vez.",
+      "Até 2 vezes.",
+      "Até 3 vezes.",
+      "Quantas vezes forem necessárias."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 196,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como são classificadas as peças que apresentam apenas indicações falsas e irrelevantes?",
+    "options": [
+      "Rejeitadas",
+      "Retrabalhadas",
+      "Aprovadas",
+      "Necessitam de nova inspeção por outro método"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 197,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O que caracteriza um defeito em uma peça, segundo os critérios de aceitação?",
+    "options": [
+      "Qualquer indicação relevante encontrada.",
+      "Uma descontinuidade que ultrapasse o valor estabelecido no critério de aceitação CA-IFI-2021 rev. A.",
+      "A presença de múltiplas indicações irrelevantes.",
+      "Uma indicação que reaparece após o primeiro wipe-off."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 198,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o destino de uma peça rejeitada?",
+    "options": [
+      "É descartada imediatamente.",
+      "É enviada para a Engenharia com cópia do relatório para análise da causa raiz.",
+      "É automaticamente classificada como retrabalhada.",
+      "É submetida a um novo ciclo de limpeza e inspeção."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 199,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como deve ser classificada uma peça com descontinuidade que não ultrapassa o valor estabelecido no critério de aceitação?",
+    "options": [
+      "Aprovada",
+      "Rejeitada",
+      "Retrabalhada",
+      "Falsa indicação"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 200,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Além de embalar com plástico bolha, o que deve acompanhar uma peça classificada como retrabalhada ao ser encaminhada para a engenharia?",
+    "options": [
+      "Amostras do penetrante e revelador utilizados.",
+      "Uma fotografia da indicação.",
+      "Cópia do relatório de inspeção.",
+      "O bloco padrão utilizado na calibração."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 201,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Onde devem ser registradas as avaliações realizadas em peças?",
+    "options": [
+      "Em um caderno de anotações do inspetor.",
+      "Diretamente na superfície da peça com marcador permanente.",
+      "Em um relatório específico.",
+      "Em um software de controle de qualidade, sem necessidade de relatório físico."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 202,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo de secagem aproximado em estufa na faixa de 40°C a 60°C?",
+    "options": [
+      "5 minutos aproximadamente",
+      "10 minutos aproximadamente",
+      "15 minutos aproximadamente",
+      "20 minutos"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 203,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Se a limpeza por vapor desengraxante for utilizada, a peça precisa ser lavada posteriormente?",
+    "options": [
+      "Sim, sempre.",
+      "Não, a peça não precisa ser lavada.",
+      "Apenas se houver resíduos visíveis.",
+      "Sim, com água destilada."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 204,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o tempo mínimo de penetração exigido para o ensaio?",
+    "options": [
+      "5 minutos",
+      "10 minutos",
+      "15 minutos",
+      "20 minutos"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 205,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Ao aplicar o penetrante por imersão, o que deve ser feito para evitar bolhas de ar?",
+    "options": [
+      "Aumentar a temperatura do penetrante.",
+      "Movimentar a peça.",
+      "Aplicar o penetrante com pincel.",
+      "Reduzir o tempo de imersão."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 206,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a faixa de temperatura da água para remoção do excesso de penetrante?",
+    "options": [
+      "5°C a 25°C",
+      "10°C a 38°C",
+      "15°C a 45°C",
+      "20°C a 50°C"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 207,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "A que ângulo o jato d’água deve ser aplicado em relação à peça ensaiada durante a remoção do excesso?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 208,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Sob qual tipo de iluminação deve ser feita a remoção do excesso de penetrante?",
+    "options": [
+      "Luz branca intensa",
+      "Luz ambiente normal",
+      "Luz UV-A",
+      "Penumbra total"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 209,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O que deve ser feito caso ocorra remoção excessiva do penetrante durante a lavagem?",
+    "options": [
+      "Secar a peça e aplicar o revelador imediatamente.",
+      "A peça deve ser limpa e reprocessada.",
+      "Continuar a inspeção, anotando a ocorrência.",
+      "Aplicar uma nova camada de penetrante sobre a área afetada."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 210,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual o cuidado especial ao remover uma peça da estufa de secagem?",
+    "options": [
+      "Resfriá-la rapidamente com jato de ar.",
+      "Aplicar o revelador imediatamente enquanto a peça está quente.",
+      "Utilizar luva apropriada e aguardar o resfriamento antes de aplicar o revelador.",
+      "Limpar a peça com solvente antes de aplicar o revelador."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 211,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O tempo de revelação é aproximadamente igual a qual outro tempo do processo?",
+    "options": [
+      "Ao tempo de secagem.",
+      "À metade do tempo de penetração.",
+      "Ao dobro do tempo de escoamento.",
+      "Ao tempo total de limpeza."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 212,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Qual a distância mínima de aplicação do revelador não aquoso em relação à peça?",
+    "options": [
+      "10 cm",
+      "20 cm",
+      "30 cm",
+      "40 cm"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 213,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Em que tipo de ambiente deve ser aplicado o revelador não aquoso e o revelador pó seco?",
+    "options": [
+      "Em ambiente fechado e sem ventilação.",
+      "Em ambiente com alta umidade.",
+      "Em ambiente com exaustão.",
+      "Em ambiente refrigerado."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 214,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Como o revelador pó seco é aplicado?",
+    "options": [
+      "Por imersão da peça no pó.",
+      "Por pincelamento.",
+      "Por ventilação.",
+      "Por pulverização eletrostática."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 215,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "O que deve ser feito com o excesso de revelador pó seco após o tempo de revelação?",
+    "options": [
+      "Deixá-lo na peça para aumentar o contraste.",
+      "Removê-lo com um pano úmido.",
+      "Removê-lo por batidas leves ou ar comprimido com pressão máxima de 5 psi.",
+      "Lavar novamente a peça."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 216,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Antes de iniciar a inspeção na cabine, o que deve ser verificado em relação à própria cabine?",
+    "options": [
+      "Se a temperatura interna está abaixo de 20°C.",
+      "Se a umidade relativa do ar está controlada.",
+      "Se a cabine está limpa, sem sinais de fluorescências.",
+      "Se há disponibilidade de todos os tipos de reveladores."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 217,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "A partir de que momento o inspetor deve começar a observar a superfície da peça durante a etapa de inspeção?",
+    "options": [
+      "Somente após o tempo mínimo de revelação ter sido atingido.",
+      "A partir do momento que o revelador for aplicado.",
+      "Após 10 minutos da aplicação do revelador.",
+      "Somente após o tempo máximo de revelação."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 218,
+    "theme": "PROCEDIMENTOS PRÁTICOS",
+    "question": "Caso necessário, qual acessório pode ser utilizado para auxiliar na inspeção visual das indicações?",
+    "options": [
+      "Um microscópio eletrônico.",
+      "Uma câmera termográfica.",
+      "Uma lupa.",
+      "Um endoscópio."
+    ],
+    "answer": 2
   }
 ]
