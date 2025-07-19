@@ -2378,14 +2378,14 @@
   {
     "id": 199,
     "theme": "PROCEDIMENTOS PRÁTICOS",
-    "question": "Como deve ser classificada uma peça com descontinuidade que não ultrapassa o valor estabelecido no critério de aceitação?",
+    "question": "Como deve ser classificada uma peça com descontinuidade (indicação relevante) que não ultrapassa o valor estabelecido no critério de aceitação?",
     "options": [
-      "Aprovada",
-      "Rejeitada",
-      "Retrabalhada",
+      "Aprovada. E deve-se embalar com plástico bolha, anexar cópia do relatório e encaminhar para a engenharia analisar e dar a disposição do trabalho a ser realizado.",
+      "Rejeitada. E deve-se embalar com plástico bolha, anexar cópia do relatório e encaminhar para a engenharia analisar e dar a disposição do retrabalho a ser realizado.",
+      "Retrabalhada. E deve-se embalar com plástico bolha, anexar cópia do relatório e encaminhar para a engenharia analisar e dar a disposição do retrabalho a ser realizado.",
       "Falsa indicação"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 200,
